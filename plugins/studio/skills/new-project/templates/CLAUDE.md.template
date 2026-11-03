@@ -1,0 +1,53 @@
+# {{APP_NAME}}
+
+{{ONE_SENTENCE_PITCH}}
+
+## What this app is
+
+- **For:** {{AUDIENCE}}
+- **Core action:** {{CORE_ACTION}}
+- **Platform:** {{PLATFORM}}
+
+Why it exists: `docs/product/vision.md`. What's in and out of the first version: `docs/product/mvp.md`. Read the relevant spec in `docs/specs/` before building a feature.
+
+## Stack
+
+{{STACK_BULLETS}}
+
+Why this stack: `docs/decisions/0001-stack.md`.
+
+<!-- Keep this line until the first build slice has scaffolded the app, then delete it. -->
+**Not scaffolded yet.** The first build slice creates the app with {{SCAFFOLD_TOOL}}. Check its current docs for the exact command, and note that some scaffolders refuse to run in a folder that already has files: scaffold into a temporary folder and move the files in.
+
+## Commands
+
+| Task | Command |
+|---|---|
+| Install dependencies | `{{INSTALL_CMD}}` |
+| Start the dev server | `{{DEV_CMD}}` {{DEV_URL_NOTE}} |
+
+Format, lint, and test commands live in `studio.config`. The studio plugin's hooks run format and lint after every edit and read the test command from there. Read it before running them, and update it whenever a command changes.
+
+## Conventions
+
+{{STACK_CONVENTIONS}}
+- Build in vertical slices: each feature goes end to end (UI, logic, data, and tests) before the next one starts.
+- Make the smallest change that meets the spec. Don't build what the spec lists as a non-goal.
+- Keep secrets in `.env` files and out of code. Commit only `.env.example`, with placeholder values.
+- Record architecture decisions in `docs/decisions/` as the next numbered file instead of settling them in chat.
+
+## Workflow
+
+1. **Evaluate** an idea or opportunity with `/studio:evaluate`. It saves `docs/research/<idea-slug>-evaluation.md`.
+2. **Spec** each feature with `/studio:spec` before writing code. It saves `docs/specs/<feature-slug>.md`. Confirm the implementation plan with the user before coding.
+3. **Build** one vertical slice at a time in the main session.
+4. **Ship** with `/studio:ship`: tests, then the verifier, the designer for UI changes, and the reviewer. Fix every BLOCKING finding, then commit.
+
+## Who does what
+
+- The user decides. The main session coordinates and writes the code.
+- Web or market research → `studio:researcher`. Questions about this codebase → `Explore`.
+- Critique of ideas, MVP scope, specs, or plans → `studio:skeptic`.
+- Tests for a feature slice → `studio:verifier`. It edits test files only.
+- How the UI looks and works in a browser → `studio:designer`. It writes only in `prototypes/`.
+- Code review before shipping → `studio:reviewer`.

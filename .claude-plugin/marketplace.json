@@ -1,0 +1,14 @@
+{
+  "name": "kaffehaus",
+  "description": "Eric's app-building studio: one workflow from idea to shipped app.",
+  "owner": {
+    "name": "Eric"
+  },
+  "plugins": [
+    {
+      "name": "studio",
+      "source": "./plugins/studio",
+      "description": "Agents, skills, and hooks for validate, define, design, build in slices, verify, review, and ship."
+    }
+  ]
+}

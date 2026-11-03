@@ -1,0 +1,24 @@
+# studio.config: this project's commands for the studio plugin.
+# The plugin's hooks and the verifier read this file, so keep it current.
+#
+# Format: one `key = value` per line. Lines starting with # are comments.
+# Leave a value empty to turn that check off.
+# In `format` and `lint`, {file} is replaced with the path of the file that was just edited.
+# Patterns are separated by spaces. A file matches if its name matches a pattern,
+# or its path from the project root does, at any depth. * also matches /.
+# An empty *_files value means every file.
+
+# Runs after every edit on the edited file, if it matches format_files.
+format = {{FORMAT_CMD}}
+format_files = {{FORMAT_FILES}}
+
+# Runs after every edit on the edited file, if it matches lint_files.
+# Use a command that reports problems without fixing them.
+lint = {{LINT_CMD}}
+lint_files = {{LINT_FILES}}
+
+# Runs the whole test suite. Used by /studio:ship and the verifier.
+test = {{TEST_CMD}}
+
+# Test files. The verifier may edit only files that match these patterns.
+test_files = {{TEST_FILES}}
