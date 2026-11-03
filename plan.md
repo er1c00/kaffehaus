@@ -172,7 +172,7 @@ Add the researcher, skeptic, designer, and verifier.
 *Done when:* one sample feature goes through the full loop in a test project: evaluate → spec → implement → ship.
 
 **Phase 6 — publish.**
-Write the README, push to GitHub, and confirm that a fresh install works via `/plugin marketplace add hazyy00/kaffehaus` and `/plugin install studio@kaffehaus`.
+Write the README, push to GitHub, and confirm that a fresh install works via `/plugin marketplace add er1c00/kaffehaus` and `/plugin install studio@kaffehaus`.
 
 ## Later (not now)
 

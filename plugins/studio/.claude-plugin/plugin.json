@@ -3,9 +3,9 @@
   "description": "A stack-neutral workflow from idea to shipped app: validate, define, design, build in slices, verify, review, and ship.",
   "author": {
     "name": "Eric",
-    "url": "https://github.com/hazyy00"
+    "url": "https://github.com/er1c00"
   },
-  "homepage": "https://github.com/hazyy00/kaffehaus",
-  "repository": "https://github.com/hazyy00/kaffehaus",
+  "homepage": "https://github.com/er1c00/kaffehaus",
+  "repository": "https://github.com/er1c00/kaffehaus",
   "keywords": ["workflow", "agents", "spec", "review", "testing"]
 }

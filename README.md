@@ -24,14 +24,14 @@ The plugin works with any stack. Each project keeps its own format, lint, and te
 In a Claude Code session:
 
 ```
-/plugin marketplace add hazyy00/kaffehaus
+/plugin marketplace add er1c00/kaffehaus
 /plugin install studio@kaffehaus
 ```
 
 Or from your shell:
 
 ```bash
-claude plugin marketplace add hazyy00/kaffehaus
+claude plugin marketplace add er1c00/kaffehaus
 claude plugin install studio@kaffehaus
 ```
 
